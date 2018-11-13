@@ -24,6 +24,10 @@ body {
         align-items: center; */
 }
 
+#form-title{
+    text-align: center;
+}
+
 #form-wrapper{
     /* display: flex; */
     /* justify-content: center; */
@@ -36,11 +40,27 @@ body {
 form{
     /* display: flex; */
     /* justify-content: center; */
-    background-color: pink;
+    /* background-color: pink; */
+    width: 100%;
+    
+}
+
+#departmentSelect, option {
     width: 100%;
 }
 
-/* form input[type=text]{
-    display: block;
-    width: 100%;
-} */
+fieldset {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+legend {
+    /* border-style: none; */
+    /* border-width: 0; */
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+}
