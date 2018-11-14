@@ -21,7 +21,7 @@
         <div class='row'>
             <div class='col'> <!--contains form-->
 
-                <form>
+                <form id='development-request-form'>
                 <fieldset>
                     <legend>Employee Information</legend>
                     <div class="form-row">
@@ -37,36 +37,85 @@
 
                     <div class="form-row">
                             
-                            <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Employee ID</label>
-                                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-                            </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                        </div>
 
-                            <div class="form-group col-md-6">
-                                    <label for="inputDepartment">Department</label>
-                                    <select id='departmentSelect'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                            </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputDepartment">Department</label>
+                            <select id='departmentSelect'>
+                                <option>Accounting</option>
+                                    <option>Marketing</option>
+                                    <option>IT</option>
+                            </select>
+                        </div>
 
                     </div>
 
                 
                 </fieldset>
 
-                <fieldset>
+                <fieldset id='project-request-fieldset'>
+                    
                     <legend>Project Request Information</legend>
+                    
                     <div class="form-row">
-                            <div class="form-group col">
-                                <label for='inputProjectTitle'>Project Title</label>
-                                <input type="text" class="form-control" id="inputProjectTitle" placeholder="Project Title">
-                            </div>
+                        <div class="form-group col">
+                            <label for='inputProjectTitle'>Project Title</label>
+                            <input type="text" class="form-control" id="inputProjectTitle" placeholder="Project Title"/>
+                        </div>
                     </div>
-                    <div class="form-row"></div>
-                    <div class="form-row"></div>
-                    <div class="form-row"></div>
+                    
+                    <div class="form-row">
+                        
+                        <div class="form-group col-md-6">
+                            <div class='radio-group'>
+                            <label class='radio-label' for='inputProjectTitle'>New Feature
+                                <input type='radio'>
+                            </label>
+
+                            <label class='radio-label' for='inputProjectTitle'>Existing Feature Improvement
+                                    <input type='radio'>
+                            </label>
+
+                            <label class='radio-label' for='inputProjectTitle'>Bug Report
+                                    <input type='radio'>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <div class="form-row">
+                                <label for="inputPriority">Priority</label>
+                                <select id='priority-select'>
+                                    <option>Low</option>
+                                    <option>Medium</option>
+                                    <option>High</option>
+                                </select>
+                            </div>
+                            <div class='form-row'>
+                                <label>Desired Delivery Date
+                                    
+                                </label><input type='datetime-local'>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- close form-row-->
+
+                    <div class="form-row">
+                        <div class='col'>
+                            <label> Description
+                            <textarea>
+
+                            </textarea>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <input type='submit'/>
+                    </div>
                 </fieldset>
 
                 </form>
