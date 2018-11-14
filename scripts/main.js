@@ -6,12 +6,15 @@
     let getFormData = function() {
         let myForm = $('#development-request-form');
         myFormInputs = myForm.find('input,select,textarea');
-        let obj = {};
+        let formData = [];
         
         myFormInputs.each((index,input)=>{
             console.log(input);
+            formData.push({
+                id: input.id,
+                value: input.value
+             });
         });
-
         // console.log(formElements);
         
         // let obj = {};
@@ -33,10 +36,10 @@
         // console.log(data);
         // return data;
 
-        return obj;
+        return formData;
+    }
 
 
-     }
 
     // post the form data
     let postData = function(event) {
@@ -55,5 +58,5 @@
 
 
 
-
-//   }, false);
+    
+//   }, false)}

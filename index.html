@@ -74,15 +74,15 @@
                             <div id='radio-wrapper'>
                             
                             <label class='radio-label' for='inputProjectType'>New Feature
-                                <input type='radio' name='inputProjectType'>
+                                <input type='radio' id='inputNewFeatureRadio' name='inputProjectType' checked>
                             </label>
 
                             <label class='radio-label' for='inputProjectType'>Existing Feature Improvement
-                                    <input type='radio' name='inputProjectType'>
+                                    <input type='radio' id='inputImprovementRadio' name='inputProjectType'>
                             </label>
 
                             <label class='radio-label' for='inputProjectType'>Bug Report
-                                    <input type='radio' name='inputProjectType'>
+                                    <input type='radio' id='inputBugRadio' name='inputProjectType'>
                             </label>
                             
                             </div>
@@ -101,7 +101,7 @@
                             <div class='form-row'>
                                 <label>Desired Delivery Date
                                     
-                                </label><input type='datetime-local' required>
+                                </label><input type='datetime-local' id='inputDateTimePicker' name='dateTimePicker' required>
                             </div>
                         </div>
                         
@@ -110,7 +110,7 @@
                     <div class="form-row">
                         <div class='col'>
                             <label> Description
-                            <textarea rows='10' required>
+                            <textarea rows='10' id='inputTextArea' required>
                             </textarea>
                             </label>
                         </div>
