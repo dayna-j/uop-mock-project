@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./styles/style.css">
@@ -27,11 +27,11 @@
                     <div class="form-row">
                             <div class="form-group col-md-6">
                                     <label for="inputFirstName">First Name</label>
-                                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
                             </div>
                             <div class="form-group col-md-6">
                                     <label for="inputLastName">Last Name</label>
-                                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
                             </div>
                     </div>
 
@@ -39,7 +39,7 @@
                             
                         <div class="form-group col-md-6">
                             <label for="inputEmail">Email Address</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" required> 
                         </div>
 
                         <div class="form-group col-md-6">
@@ -63,7 +63,7 @@
                     <div class="form-row">
                         <div class="form-group col">
                             <label for='inputProjectTitle'>Project Title</label>
-                            <input type="text" class="form-control" id="inputProjectTitle" placeholder="Project Title"/>
+                            <input type="text" class="form-control" id="inputProjectTitle" placeholder="Project Title" required/>
                         </div>
                     </div>
                     
@@ -71,17 +71,21 @@
                         
                         <div class="form-group col-md-6">
                             <div class='radio-group'>
-                            <label class='radio-label' for='inputProjectTitle'>New Feature
-                                <input type='radio'>
+                            <div id='radio-wrapper'>
+                            
+                            <label class='radio-label' for='inputProjectType'>New Feature
+                                <input type='radio' name='inputProjectType'>
                             </label>
 
-                            <label class='radio-label' for='inputProjectTitle'>Existing Feature Improvement
-                                    <input type='radio'>
+                            <label class='radio-label' for='inputProjectType'>Existing Feature Improvement
+                                    <input type='radio' name='inputProjectType'>
                             </label>
 
-                            <label class='radio-label' for='inputProjectTitle'>Bug Report
-                                    <input type='radio'>
+                            <label class='radio-label' for='inputProjectType'>Bug Report
+                                    <input type='radio' name='inputProjectType'>
                             </label>
+                            
+                            </div>
                             </div>
                         </div>
 
@@ -97,7 +101,7 @@
                             <div class='form-row'>
                                 <label>Desired Delivery Date
                                     
-                                </label><input type='datetime-local'>
+                                </label><input type='datetime-local' required>
                             </div>
                         </div>
                         
@@ -106,15 +110,14 @@
                     <div class="form-row">
                         <div class='col'>
                             <label> Description
-                            <textarea>
-
+                            <textarea rows='10' required>
                             </textarea>
                             </label>
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <input type='submit'/>
+                        <input type='submit' class='btn btn-primary' disabled/>
                     </div>
                 </fieldset>
 
