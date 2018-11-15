@@ -1,17 +1,15 @@
 window.addEventListener('load', 
     function() { 
 
-    
-
-
     let URL = 'https://jsonplaceholder.typicode.com/posts';
     
         // post the form data
     let postData = function(event) {
         event.preventDefault();
-        // alert('postData working');
         let formData = getFormData();
+        console.log('formData returned by getFormData function:')
         console.log(formData);
+        
         let postOptions = {
             method: 'POST',
             body: JSON.stringify(formData),
@@ -19,9 +17,13 @@ window.addEventListener('load',
                 'Content-Type': 'application/json'
               }
         };
+        
         fetch(URL, postOptions)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                console.log('Response from jsonplaceholder:');
+                console.log(data);
+            })
             .catch((err)=>console.log(err));
     }
     // get the form data
@@ -40,18 +42,5 @@ window.addEventListener('load',
         });
         return formData;
     }
-
-
     document.getElementById('development-request-form').addEventListener('submit', postData);    
-
-
-
-
-
-    
-    
-
-
-
-    
   }, false);
