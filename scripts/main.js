@@ -23,6 +23,7 @@ window.addEventListener('load',
             .then(data => {
                 console.log('Response from jsonplaceholder:');
                 console.log(data);
+                alert('Form submitted!');
             })
             .catch((err)=>console.log(err));
     }
