@@ -17,13 +17,15 @@ body {
     font-family: sans-serif;
 }
 
-.container{
-    background-color: #b1a1bb;
+.container-fluid{
+    background-color: #513E56;
+    /* background-color: blue; */
     /* height: 95%; */
     height: 100%;
+    width: 90%;
     overflow-y: scroll;
-    /* width: 95%; */
 }
+
 
 #form-title {
     margin: 0;
@@ -43,6 +45,7 @@ form {
 
 form label {
     display: block;
+    color: azure;
 }
 
 form select, option {
@@ -56,6 +59,7 @@ legend {
     line-height: 20px;
     width: auto;
     padding: 0 10px;
+    color: azure;
     /* border: 1px solid #e0e0e0; */
 }
 
