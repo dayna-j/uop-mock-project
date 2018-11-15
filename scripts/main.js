@@ -1,5 +1,9 @@
-// window.addEventListener('load', 
-    // function() { 
+window.addEventListener('load', 
+    function() { 
+
+    
+
+
     let URL = 'https://jsonplaceholder.typicode.com/posts';
     
         // post the form data
@@ -50,4 +54,4 @@
 
 
     
-//   }, false)};
+  }, false);
