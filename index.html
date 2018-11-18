@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label for="inputDepartment">Department</label>
+                            <label for="inputDepartmentSelect">Department</label>
                             <select id='inputDepartmentSelect' name='inputDepartmentSelect' aria-labelledby='inputDepartmentSelect'>
                                 <option>Accounting</option>
                                 <option>Marketing</option>
@@ -68,16 +68,16 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <div class='radio-group'>
-                            <div id='radio-wrapper'>
-                            <label class='radio-label' for='inputProjectType'>New Feature
+                            <div id='radio-wrapper form-check'>
+                            <label class='radio-label' for='inputNewFeatureRadio'>New Feature
                                 <input type='radio' id='inputNewFeatureRadio' name='inputProjectType' aria-labelledby='inputNewFeatureRadio'>
                             </label>
 
-                            <label class='radio-label' for='inputProjectType'>Existing Feature Improvement
+                            <label class='radio-label' for='inputImprovementRadio'>Existing Feature Improvement
                                     <input type='radio' id='inputImprovementRadio' aria-labelledby='inputImprovementRadio' name='inputProjectType'>
                             </label>
 
-                            <label class='radio-label' for='inputProjectType'>Bug Report
+                            <label class='radio-label' for='inputBugRadio'>Bug Report
                                     <input type='radio' id='inputBugRadio' name='inputProjectType' aria-labelledby='inputBugRadio'>
                             </label>
                             </div>
@@ -95,7 +95,7 @@
                             </div>
                             
                             <div class='form-row'>
-                                <label>Desired Completion Date
+                                <label for='inputDateTimePicker'>Desired Completion Date
                                 </label><input type='datetime-local' id='inputDateTimePicker' name='inputDateTimePicker' required>
                             </div>
                         </div>
@@ -104,10 +104,10 @@
 
                     <div class="form-row">
                         <div class='col'>
-                            <label> Development Project Description:  
-                            <textarea rows='10' id='inputTextArea' name='inputTextArea' required>
+                            <label for='inputTextArea'>Development Project Description:  </label>
+                            <textarea rows='10' id='inputTextArea' class='form-control' name='inputTextArea' required>
                             </textarea>
-                            </label>
+                            
                         </div>
                     </div>
 
